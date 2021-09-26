@@ -1,0 +1,85 @@
+@media (max-width :1023px) {
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+    .btn{
+        padding: 15px 16px;}
+        .contact-form .form-control {
+            padding: 15px;
+        }
+    .socials-list{
+        font-size: 48px;
+    }
+    #footer .socials-list a {margin: 0 8px;}
+    #footer .copy-right a{
+        padding: 12px 0px;
+    }
+    .contact-info{
+        font-size: 18px;
+        line-height: 2;
+    }
+    .contact-info a {
+        color: blue;
+        opacity: 0.6;
+    }
+    .contact-info a:hover {
+        opacity: 1;
+        
+    }
+}
+
+
+
+
+
+
+@media (max-width :739px) {
+    .s-full-width,.s-col-full{
+        width: 100%;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    #nav{
+        display: block;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header .mobile-menu-icon{
+        display: block;
+    }
+    #nav> li {
+        display: block;}
+        #header .search-btn {
+        
+            display: none;
+        }
+        #nav .subnav{
+            position: initial;
+            background: #333;
+        }
+        #nav .subnav a{
+            color: #fff;
+            padding: 8px 42px;
+        }
+        #nav li a {
+            padding: 1px 24px;
+        }
+        #nav> li:first-child {
+display: inline-block;
+        }
+
+        #content .member-img{
+            width: 60%;
+        }
+
+    
+        .contact-form{
+            margin-top: 32px;
+        }
+        .history-section__img{
+            width: 100%;
+        }
+
+}

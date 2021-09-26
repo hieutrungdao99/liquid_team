@@ -1,0 +1,472 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 1 vị trí 
+2 kích thước
+3 màu sắc
+4 kiểu dáng (kiểu chữ ,hình tròn,vuông ...)  */
+
+/* 
+1. từ ngoài vào trong 
+2. từ trên xuống dưới 
+3. tổng quan đến chi tiết
+*/
+/* common */
+.text-white{
+    color: white !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.clear{
+    clear: both;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding: 0 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-half{
+    width: 50%;
+}
+.col-thrid{
+    width: 33.33333%;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.mt-32{
+    margin-top: 32px;
+}
+.btn{
+    display: inline-block;
+color: #fff;
+background-color: #000;
+text-decoration: none;
+padding: 11px 16px;
+margin-top: 15px;
+border: none;
+}
+.btn:hover{
+    color: #000;background-color: #ccc;
+    cursor: pointer;
+}
+.pull-right{
+    float: right !important;
+}
+/* main */
+#main {
+
+}
+
+#header {
+height: 46px;
+background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+
+}
+#nav {
+display: inline-block;
+}
+#nav> li {
+    display: inline-block;}
+
+#nav li {
+position: relative;
+}
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 24px;
+}
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav> li:hover> a {
+    color: black;
+    background-color: #ccc;
+}
+#nav .subnav {
+    /* display: none; */
+position: absolute;
+background-color: #fff;
+}
+/* #nav >.subnav> a {} */
+#nav .subnav a {
+    color: black;
+line-height: 22px;
+padding: 8px;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+}
+#nav .nav-circle-down{
+    font-size: 12px;
+}
+#header .mobile-menu-icon,
+#header .search-btn{
+    float: right;
+}
+#header .mobile-menu-icon,
+#header .search-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+#header .mobile-menu-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#header .mobile-menu-icon:hover{
+    background-color: #ccc;
+
+}    
+#header .mobile-menu-icon:hover .menu-icon{
+    color: #000;
+
+}  
+#slider {
+margin-top: 46px;
+padding-top: 50%;
+background: url('https://wallpapercave.com/wp/wp1994453.png') top center / cover no-repeat;
+position: relative;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+   
+    color: #fff;
+ width: 100%;
+    text-align: center;
+}
+#slider .text-description {
+    margin-top: 20px;
+font-size: 20px;
+text-shadow: 0 0 1px black;
+}
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#content {
+
+}
+
+
+#content .content-section{
+width: 800px;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding: 64px 0 112px;
+padding-left: 16px;
+padding-right: 16px;
+
+}
+#content .section-heading {
+font-size: 30px;
+text-align: center;
+font-weight: 500;
+}
+#content .section-sub-heading {
+margin-top: 25px;
+font-size: 15px;
+text-align: center;
+font-style: italic;
+opacity: 0.6;
+}
+#content .about-text{
+margin-top: 30px;
+font-size: 15px;
+text-align: center;
+text-align: justify;
+line-height: 1.4;
+}
+#content .member-list{
+    margin-top: 32px;
+  
+   
+}
+
+#content .member-name {
+    
+}
+#content .member-img{
+    margin-top: 12px;
+    width: 154px;
+    border-radius: 4px;
+}
+.History-section{
+width: 800px;
+max-width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding: 64px 0 76px;
+padding-left: 16px;
+padding-right: 16px;
+overflow: hidden;
+
+}
+.History-section__item{
+  
+  
+    border-top: 1px solid #666;
+}
+.border-item{
+    border: 1px solid rgb(219, 217, 217);
+}
+.history-section__heading{
+    margin-top: 36px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.history-section__img{
+    background-size: contain;
+}
+.tour-section{
+    
+    background-color: black;
+}
+
+.tickets-list{
+    margin-top: 44px;
+    background-color: white;
+    list-style: none;
+   
+}
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out{
+    color: #fff;
+   margin-left: 16px;
+   background-color: #f44336;
+   padding: 2px 6px;
+}
+.tickets-list .quantity{
+float: right;
+width: 24px;
+height: 24px;
+background-color: #000;
+color: #fff;
+border-radius: 50%;
+text-align: center;
+line-height: 24px;
+margin-top: -3px;
+}
+.place-list{
+margin-top: 16px;
+
+
+}
+.place-item{
+}
+.place-img{
+width: 100%;
+display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+background-color: #fff;
+padding: 16px;
+font-size: 15px;
+}
+.place-heading{
+font-size: 15px;
+font-weight: 600;
+}
+.place-time{
+margin-top: 15px;
+color: #757575;
+}
+.place-content{
+    margin-top: 15px;
+    line-height: 1.4;
+
+}
+
+
+.modal{
+    position: fixed;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background-color: rgba(0, 0,0, 0.4);
+    display: none;
+    align-items: center;justify-content: center;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+.modal-header{
+background-color: #009688;
+height: 130px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+}
+.modal-header-icon{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;top: 0;
+    padding: 12px;
+    cursor: pointer;
+    
+}
+.modal-close:hover{
+    background-color: #757575;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{display: block;
+font-size: 15px;
+margin-bottom: 12px;
+
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+width: 100%;
+
+}
+#buy-tickets{
+    background-color: #009688;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+#buy-tickets:hover{
+    opacity: 0.9;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal-help>a{
+    color: blue;
+}
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-120px);}
+    to{opacity: 1;
+        transform: translateY(0px);}
+}
+.contact-content{
+    margin-top: 48px;
+    line-height: 1.5;
+}
+.contact-content.contact-info {
+font-size: 18px;
+}
+.contact-content i{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .contact-sumit{
+    float: right;
+    background-color: black;
+    color: #fff;
+    padding: 9px 14px;
+    font-size: 15px;
+    border: 1px solid #000;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.map-section img {
+    width: 100%;
+}
+#footer{
+    text-align: center;
+    padding: 64px 16px;
+}
+
+#footer .socials-list a {
+font-size: 24px;
+color:rgba(0, 0,0, 0.6);
+text-decoration: none;
+
+
+}
+#footer .copy-right{
+    margin: 15px;
+    color:rgba(0, 0,0, 0.6);
+}
+#footer .copy-right a{   color:rgba(0, 0,0, 0.6);
+}
+
+#footer .socials-list a:hover{
+    color:rgba(0, 0,0, 0.4);
+}
